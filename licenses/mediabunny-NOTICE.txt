@@ -1,0 +1,10 @@
+Mediabunny 1.61.6
+Copyright (c) 2026-present, Vanilagy and contributors
+Mozilla Public License, v. 2.0
+
+This application bundles an unmodified Mediabunny dependency. Its corresponding
+Source Code Form is available at:
+https://github.com/Vanilagy/mediabunny/tree/8dee3638fb1755e58b88d4432e344c5916027e76
+https://www.npmjs.com/package/mediabunny/v/1.61.6
+
+The full license is provided alongside this notice as mediabunny-MPL-2.0.txt.
