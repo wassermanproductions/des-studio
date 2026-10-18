@@ -1,0 +1,5 @@
+# Keep trained models and runtimes byte-for-byte on every platform.
+*.onnx binary
+*.wasm binary
+*.task binary
+*.tflite binary

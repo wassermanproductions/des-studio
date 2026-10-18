@@ -1,0 +1,24 @@
+GFPGAN v1.4, Apache License 2.0
+Copyright (C) 2021 THL A29 Limited, a Tencent company. All rights reserved.
+Original project: https://github.com/TencentARC/GFPGAN
+Upstream license source: https://github.com/TencentARC/GFPGAN/blob/7552a7791caad982045a7bbe5634bbf1cd5c8679/LICENSE
+
+Based on opiumuseless's float16 stored-weight / float32 compute ONNX export,
+itself converted from Meeperomi/GFPGANv1.4-onnx:
+https://huggingface.co/opiumuseless/gfpgan-v1.4-w16/tree/996691710925f8f44f0896490b8ff3d7a559398a
+Input GFPGANv1.4-w16.onnx SHA256:
+1704d227d3a0ca73618137f55e1a124d3953a68a990ecd0e7e2e039b2823eb11
+
+Modified for Des Studio: 117 large stored weight tensors use per-channel
+symmetric INT8 values and Cast/Mul dequantization. Computation stays float32.
+Model gfpgan-q8-2689632f.onnx SHA256:
+2689632fd105c011b4a6a72288a0542cdb055774af27b042ef8196e26e83356d
+The full upstream license is included as gfpgan-Apache-2.0.txt.
+
+FFHQ five-point alignment template follows facexlib's FaceRestoreHelper:
+https://github.com/xinntao/facexlib/blob/master/facexlib/utils/face_restoration_helper.py
+
+GFPGAN v1.4 estimates face detail. Des Studio limits the blend, checks a
+temporary local SFace descriptor, and requires preview review before Apply.
+Neither restoration nor the face-match check guarantees identity or recovered
+ground truth. No image or face descriptor is uploaded.
