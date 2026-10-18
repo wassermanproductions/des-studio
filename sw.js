@@ -1,6 +1,6 @@
-const CACHE='des-studio-8c8d54d9a088';
+const CACHE='des-studio-0822c0823d01';
 const HOME=new URL('./',self.location).href;
-const CORE=["/","/assets/index-BjCIeQEg.js","/assets/index-LOXbuJLE.css","/assets/removal.worker-Csqq_uG1.js","/assets/vision_bundle-ChfLQYcN.js","/icon-180.png","/icon-192.png","/icon-512.png","/icon.svg","/index.html","/licenses/lama-Apache-2.0.txt","/licenses/mediapipe-Apache-2.0.txt","/licenses/onnxruntime-MIT.txt","/manifest.webmanifest","/onnx/ort-wasm-simd-threaded.mjs","/onnx/ort.wasm.min.mjs","/sample-portrait.png"].map(p=>new URL(p.slice(1),HOME).href);
+const CORE=["/","/assets/enlarge.worker-CtZ66YiH.js","/assets/index-BgDej7qq.css","/assets/index-DoQIIlFI.js","/assets/removal.worker-zA9EUXN3.js","/assets/vision_bundle-ChfLQYcN.js","/icon-180.png","/icon-192.png","/icon-512.png","/icon.svg","/index.html","/licenses/lama-Apache-2.0.txt","/licenses/mediapipe-Apache-2.0.txt","/licenses/onnxmodelzoo-Apache-2.0.txt","/licenses/onnxruntime-MIT.txt","/manifest.webmanifest","/onnx/ort-wasm-simd-threaded.mjs","/onnx/ort.wasm.min.mjs","/sample-portrait.png"].map(p=>new URL(p.slice(1),HOME).href);
 const TOOLS=["/models/face_landmarker.task","/models/selfie_multiclass.tflite","/wasm/vision_wasm_internal.js","/wasm/vision_wasm_internal.wasm","/wasm/vision_wasm_nosimd_internal.js","/wasm/vision_wasm_nosimd_internal.wasm"].map(p=>new URL(p.slice(1),HOME).href);
 let download;
 async function tell(type){for(const c of await self.clients.matchAll({includeUncontrolled:true}))c.postMessage({type});}
