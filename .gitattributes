@@ -3,3 +3,7 @@
 *.wasm binary
 *.task binary
 *.tflite binary
+*.heic binary
+*.heif binary
+*.gz binary
+*.tgz binary
