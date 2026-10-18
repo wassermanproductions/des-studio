@@ -1,6 +1,6 @@
-const CACHE='des-studio-72513f27ac4b';
+const CACHE='des-studio-65833a23ff75';
 const HOME=new URL('./',self.location).href;
-const CORE=["/","/assets/index-CD6BE346.css","/assets/index-XxnzM31b.js","/assets/vision_bundle-ChfLQYcN.js","/icon-180.png","/icon-192.png","/icon-512.png","/icon.svg","/index.html","/licenses/mediapipe-Apache-2.0.txt","/manifest.webmanifest","/sample-portrait.png"].map(p=>new URL(p.slice(1),HOME).href);
+const CORE=["/","/assets/index-Bjbdfqji.css","/assets/index-DNqFABum.js","/assets/vision_bundle-ChfLQYcN.js","/icon-180.png","/icon-192.png","/icon-512.png","/icon.svg","/index.html","/licenses/mediapipe-Apache-2.0.txt","/manifest.webmanifest","/sample-portrait.png"].map(p=>new URL(p.slice(1),HOME).href);
 const TOOLS=["/models/face_landmarker.task","/models/selfie_multiclass.tflite","/wasm/vision_wasm_internal.js","/wasm/vision_wasm_internal.wasm","/wasm/vision_wasm_nosimd_internal.js","/wasm/vision_wasm_nosimd_internal.wasm"].map(p=>new URL(p.slice(1),HOME).href);
 let download;
 async function tell(type){for(const c of await self.clients.matchAll({includeUncontrolled:true}))c.postMessage({type});}
